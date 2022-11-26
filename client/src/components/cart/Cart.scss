@@ -1,0 +1,43 @@
+
+.cart-container {
+    padding: 1rem;
+    box-shadow: 0 0 2px green;
+    border-radius: 0.2rem;
+
+    .cart-heading {
+        text-align: center;
+    }
+
+    .total-cost {
+        display: flex;
+        justify-content: space-between;
+
+        .total {
+            color: green;
+            font-weight: 900;
+        }
+    }
+
+    .cart-ordered-product-container {
+        display: grid;
+        grid-template-columns: 30% 80%;
+
+        img {
+            width: 3.6rem;
+            height: 3rem;
+        }
+
+        .cart-title-price{
+            display: grid;
+            grid-template-columns: 70% 30%;
+
+            .price {
+                color: rgb(34, 0, 255);
+            }
+        }
+
+        .add-remove-btn {
+            margin-bottom: 1rem;
+        }
+    }
+}

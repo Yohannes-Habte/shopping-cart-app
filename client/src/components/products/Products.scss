@@ -1,0 +1,43 @@
+.products-container {
+  display: grid;
+  grid-template-columns: repeat(3, 1fr);
+  column-gap: 1rem;
+  row-gap: 1rem;
+
+  .product {
+    padding: 0.5rem;
+    box-shadow: 0 0 2px green;
+    border-radius: 0.2rem;
+    & img {
+      height: 15rem;
+      width: 18rem;
+    }
+
+    .title-price {
+      display: flex;
+      justify-content: space-between;
+      padding: 0.3rem;
+      font-weight: 700;
+    }
+
+    .product-btn-container {
+      display: flex;
+      justify-content: space-between;
+      padding: 0.5rem;
+
+      .product-btn-add {
+        padding: 0.3rem;
+        border-radius: 0.3rem;
+        background-color: rgb(172, 204, 243);
+        cursor: pointer;
+      }
+
+      .product-btn-delete {
+        padding: 0.3rem;
+        border-radius: 0.3rem;
+        background-color: rgb(243, 172, 235);
+        cursor: pointer;
+      }
+    }
+  }
+}
